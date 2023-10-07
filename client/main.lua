@@ -2,7 +2,7 @@ local MiningLocation = {}
 
 --#region Functions
 
-local function AddBlipForCoords(blipname, bliphash, coords)
+function AddBlipForCoords(blipname, bliphash, coords)
 	local blip = Citizen.InvokeNative(0x554D9D53F696D002, 1664425300, coords)
 	SetBlipSprite(blip, bliphash, true)
 	SetBlipScale(blip, 0.2)
